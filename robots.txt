@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tdservices-tech.github.io/tdservices/sitemap.xml
