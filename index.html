@@ -4,13 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Td-Services - Création de sites web et design graphique en Côte d'Ivoire. Sites vitrines dès 25 000 FCFA, boutiques en ligne, logos et cartes de visite. Devis gratuit en 24h.">
-    <meta name="keywords" content="création site web Côte d'Ivoire, site vitrine Abidjan, boutique en ligne, design graphique, logo, carte de visite, Td-Services">
+    <meta name="keywords" content="création site web Côte d'Ivoire, site vitrine Abidjan, boutique en ligne, design graphique, logo, carte de visite, Td-Services, Djakaridja Touré">
     <meta name="author" content="Td-Services">
+    <meta name="robots" content="index, follow">
     <meta property="og:title" content="Td-Services | Création de sites web & design graphique">
     <meta property="og:description" content="Sites vitrines dès 25 000 FCFA, boutiques en ligne, logos et cartes de visite. Devis gratuit en 24h.">
     <meta property="og:url" content="https://tdservices-tech.github.io/tdservices/">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn.pixabay.com/photo/2015/01/08/18/27/startup-593341_640.jpg">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
     <title>Td-Services | Création de sites web & design graphique</title>
+    
+    <!-- Données structurées JSON-LD pour le SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Td-Services",
+        "description": "Création de sites web et design graphique en Côte d'Ivoire",
+        "telephone": "+2250576604748",
+        "email": "turaybusiness888@gmail.com",
+        "url": "https://tdservices-tech.github.io/tdservices/",
+        "priceRange": "5000-80000",
+        "currenciesAccepted": "XOF",
+        "paymentAccepted": "Orange Money, Mobile Money, Wave, Espèces",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Côte d'Ivoire"
+        },
+        "sameAs": [
+            "https://facebook.com/tdservices",
+            "https://instagram.com/boutique.enligne.ci"
+        ]
+    }
+    </script>
+
     <style>
         * {
             margin: 0;
@@ -80,6 +108,48 @@
             font-size: 0.9rem;
             margin-top: 15px;
         }
+        .btn-promo {
+            background: #ff6b35;
+            animation: glow 2s infinite;
+        }
+        .btn-promo:hover {
+            background: #e55a2b;
+        }
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px #ff6b35; }
+            50% { box-shadow: 0 0 20px #ff6b35; }
+            100% { box-shadow: 0 0 5px #ff6b35; }
+        }
+
+        /* BOUTON WHATSAPP FLOTTANT */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            z-index: 9999;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
 
         /* NAVIGATION */
         nav {
@@ -94,12 +164,29 @@
             flex-wrap: wrap;
         }
         .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
             text-decoration: none;
         }
-        .logo span {
+        .logo-icon {
+            background: #25D366;
+            color: #0e1e3e;
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+        .logo-text {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: white;
+        }
+        .logo-text span {
             color: #25D366;
         }
         .nav-links {
@@ -118,19 +205,41 @@
             color: #25D366;
         }
 
+        /* BANNIÈRE PROMO */
+        .promo-banner {
+            background: #ff6b35;
+            color: white;
+            text-align: center;
+            padding: 12px 20px;
+            font-weight: bold;
+            font-size: 1rem;
+            position: relative;
+            z-index: 999;
+        }
+        .promo-banner a {
+            color: white;
+            text-decoration: underline;
+        }
+
         /* HERO */
         .hero {
             background: linear-gradient(135deg, #0e76a8, #0e1e3e);
             color: white;
-            padding: 80px 20px;
+            padding: 60px 20px 80px;
             text-align: center;
         }
         .hero h1 {
             font-size: 2.5rem;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
+        }
+        .hero .price-tag {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #25D366;
+            margin-bottom: 10px;
         }
         .hero p {
             font-size: 1.2rem;
@@ -260,23 +369,64 @@
             color: #555;
             line-height: 1.6;
         }
-        .google-reviews-link {
+
+        /* AVIS */
+        .reviews-section {
+            padding: 60px 0;
+            background: #fafafa;
+        }
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .review-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
             text-align: center;
-            margin-top: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+            transition: transform 0.3s ease;
         }
-        .google-reviews-link a {
-            display: inline-block;
-            background: #f4f4f4;
-            border-radius: 30px;
-            padding: 10px 25px;
-            text-decoration: none;
+        .review-card:hover {
+            transform: translateY(-5px);
+        }
+        .review-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        .review-card h3 {
             color: #0e1e3e;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            font-weight: 500;
-            transition: box-shadow 0.3s ease;
+            margin-bottom: 10px;
         }
-        .google-reviews-link a:hover {
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        .review-card p {
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        /* FAQ */
+        .faq-section {
+            padding: 60px 0;
+        }
+        .faq-item {
+            background: white;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            padding: 20px 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+        }
+        .faq-item h3 {
+            color: #0e1e3e;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        .faq-item p {
+            color: #555;
+            line-height: 1.6;
         }
 
         /* FORMULAIRE */
@@ -299,6 +449,25 @@
             border-radius: 10px;
             box-shadow: 0 2px 15px rgba(0,0,0,0.1);
             border: none;
+        }
+
+        /* PAIEMENT */
+        .payment-section {
+            padding: 20px 0;
+            text-align: center;
+            background: #f9f9f9;
+        }
+        .payment-methods {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .payment-method {
+            font-weight: 600;
+            color: #0e1e3e;
+            font-size: 1.1rem;
         }
 
         /* FOOTER */
@@ -330,6 +499,24 @@
         .footer-legal a {
             color: #aaa;
         }
+        .google-reviews-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .google-reviews-link a {
+            display: inline-block;
+            background: #f4f4f4;
+            border-radius: 30px;
+            padding: 10px 25px;
+            text-decoration: none;
+            color: #0e1e3e;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            font-weight: 500;
+            transition: box-shadow 0.3s ease;
+        }
+        .google-reviews-link a:hover {
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
 
         /* RESPONSIVE */
         @media (max-width: 768px) {
@@ -344,9 +531,9 @@
                 font-size: 1.8rem;
             }
             .hero {
-                padding: 40px 15px;
+                padding: 40px 15px 60px;
             }
-            .why-us-card {
+            .why-us-card, .review-card, .faq-item {
                 padding: 20px;
             }
             .trust-items {
@@ -356,22 +543,33 @@
     </style>
 </head>
 <body>
+    <!-- BANNIÈRE PROMO -->
+    <div class="promo-banner">
+        🎉 Offre de lancement : -10% sur votre premier projet jusqu'au 30 juin 2026 — <a href="#contact">Demander un devis</a>
+    </div>
+
     <!-- NAVIGATION -->
     <nav>
-        <a href="#" class="logo">Td-<span>Services</span></a>
+        <a href="#" class="logo">
+            <div class="logo-icon">TD</div>
+            <div class="logo-text">Td-<span>Services</span></div>
+        </a>
         <ul class="nav-links">
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#pourquoi">Pourquoi nous ?</a></li>
+            <li><a href="#avis">Avis</a></li>
+            <li><a href="#faq">FAQ</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <!-- HERO -->
     <section class="hero">
-        <h1>Votre site web professionnel à partir de 25 000 FCFA</h1>
-        <p>Création de sites vitrines, boutiques en ligne et design graphique en Côte d'Ivoire. Devis gratuit en 24h.</p>
-        <a href="https://wa.me/2250576604748?text=Salut%20Td-Services%2C%20je%20souhaite%20un%20site%20vitrine." class="btn" target="_blank" rel="noopener">Commander sur WhatsApp</a>
+        <h1>Votre site web professionnel en Côte d'Ivoire</h1>
+        <p class="price-tag">À partir de 25 000 FCFA</p>
+        <p>Création de sites vitrines, boutiques en ligne et design graphique. Devis gratuit en 24h.</p>
+        <a href="https://wa.me/2250576604748?text=Salut%20Td-Services%2C%20je%20souhaite%20un%20site%20vitrine." class="btn btn-promo" target="_blank" rel="noopener">-10% : Commander sur WhatsApp</a>
         <a href="#contact" class="btn btn-outline">Demander un devis gratuit</a>
     </section>
 
@@ -448,17 +646,17 @@
             <p class="subtitle">Quelques projets récents réalisés avec soin</p>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
-                    <img src="https://i.postimg.cc/bvDcKfhR/11797.jpg" alt="EDC Construction - Site vitrine" class="portfolio-img" loading="lazy">
+                    <img src="https://image.thum.io/get/width/600/crop/400/https://djagassaconstructions.netlify.app/" alt="EDC Construction - Site vitrine standard 50 000 FCFA" class="portfolio-img" loading="lazy">
                     <h3>EDC Construction</h3>
                     <p>Site vitrine standard — 50 000 FCFA</p>
                 </div>
                 <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80" alt="Nos Services - Création web" class="portfolio-img" loading="lazy">
+                    <img src="https://cdn.pixabay.com/photo/2015/01/08/18/27/startup-593341_640.jpg" alt="Nos Services - Site vitrine simple 25 000 FCFA" class="portfolio-img" loading="lazy">
                     <h3>Nos Services</h3>
                     <p>Site vitrine simple — 25 000 FCFA</p>
                 </div>
                 <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=600&q=80" alt="Design Canva - Design graphique" class="portfolio-img" loading="lazy">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_640.jpg" alt="Design Canva - Logo et carte de visite dès 5 000 FCFA" class="portfolio-img" loading="lazy">
                     <h3>Design Canva</h3>
                     <p>Logo & carte de visite — dès 5 000 FCFA</p>
                 </div>
@@ -518,6 +716,88 @@
         </div>
     </section>
 
+    <!-- LAISSER UN AVIS -->
+    <section class="reviews-section" id="avis">
+        <div class="container">
+            <h2>Laissez votre avis</h2>
+            <p class="subtitle">Votre retour aide d'autres entrepreneurs à me faire confiance</p>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-icon">⭐</div>
+                    <h3>Google Business</h3>
+                    <p>Laissez un avis sur ma fiche Google vérifiée. Cela prend 2 minutes et m'aide énormément.</p>
+                    <a href="https://g.page/r/CUWSH5KY5CagEAE/review" class="btn btn-dark" target="_blank" rel="noopener">Donner mon avis sur Google</a>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-icon">💬</div>
+                    <h3>WhatsApp</h3>
+                    <p>Envoyez-moi votre témoignage directement sur WhatsApp. Je le publierai sur le site avec votre accord.</p>
+                    <a href="https://wa.me/2250576604748?text=Bonjour%20Td-Services%2C%20voici%20mon%20t%C3%A9moignage%20%3A" class="btn" target="_blank" rel="noopener">Envoyer mon témoignage</a>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-icon">📝</div>
+                    <h3>Formulaire</h3>
+                    <p>Remplissez ce formulaire rapide pour partager votre expérience avec Td-Services.</p>
+                    <a href="#contact" class="btn btn-dark">Aller au formulaire</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <h2>Questions fréquentes</h2>
+            <p class="subtitle">Tout ce que vous devez savoir avant de commander</p>
+            
+            <div class="faq-item">
+                <h3>💬 Comment se passe la création de mon site ?</h3>
+                <p>Vous me décrivez votre projet par WhatsApp ou via le formulaire. Je vous envoie une maquette sous 48h. Une fois validée, je code le site et le mets en ligne. Vous ne payez qu'après validation de la maquette.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>📅 Quel est le délai de livraison ?</h3>
+                <p>Un site vitrine simple est livré en 5 jours ouvrés maximum. Pour les urgences, je peux livrer en 48h. Les projets plus complexes (boutique en ligne, site pro) prennent 7 à 10 jours.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>💳 Quels moyens de paiement acceptez-vous ?</h3>
+                <p>J'accepte Orange Money, Mobile Money (MTN, Moov), Wave et les paiements en espèces. Vous payez après avoir validé la maquette de votre site.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>🔄 Et si je veux modifier mon site plus tard ?</h3>
+                <p>Je propose un service de maintenance à 3 000 FCFA/mois qui inclut les mises à jour et les petites modifications. Sans abonnement, chaque modification est facturée selon le temps nécessaire.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>📱 Mon site sera-t-il visible sur téléphone ?</h3>
+                <p>Oui, tous mes sites sont responsive : ils s'adaptent automatiquement aux écrans de téléphone, tablette et ordinateur. Vos clients pourront vous lire confortablement quel que soit leur appareil.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>🔍 Mon site apparaîtra-t-il sur Google ?</h3>
+                <p>Oui, chaque site est livré avec un référencement de base (balises meta, structure optimisée). Pour un référencement plus poussé, je propose le pack Site vitrine pro qui inclut une optimisation SEO avancée.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAIEMENT -->
+    <div class="payment-section">
+        <div class="container">
+            <p style="font-weight: bold; margin-bottom: 15px;">💳 Moyens de paiement acceptés</p>
+            <div class="payment-methods">
+                <span class="payment-method">🟠 Orange Money</span>
+                <span class="payment-method">🟡 Mobile Money</span>
+                <span class="payment-method">🔵 Wave</span>
+                <span class="payment-method">💵 Espèces</span>
+            </div>
+        </div>
+    </div>
+
     <!-- CONTACT & FORMULAIRE -->
     <section class="contact-section" id="contact">
         <div class="container">
@@ -549,6 +829,7 @@
     <!-- FOOTER -->
     <footer>
         <p>© 2026 <strong>Td-Services</strong>. Tous droits réservés.</p>
+        <p style="margin-top: 5px;">Djakaridja Touré — Création web & design graphique en Côte d'Ivoire</p>
         <div class="footer-links">
             <a href="https://facebook.com/tdservices" target="_blank" rel="noopener">Facebook</a>
             <a href="https://instagram.com/boutique.enligne.ci" target="_blank" rel="noopener">Instagram</a>
@@ -563,5 +844,10 @@
             📍 Basé en Côte d'Ivoire | 📞 +225 05 76 60 47 48
         </p>
     </footer>
+
+    <!-- BOUTON WHATSAPP FLOTTANT -->
+    <a href="https://wa.me/2250576604748?text=Bonjour%20Td-Services%20!" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactez-nous sur WhatsApp">
+        💬
+    </a>
 </body>
 </html>
