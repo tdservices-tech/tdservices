@@ -1,13 +1,14 @@
-# Td-Services — Agence de création web & design graphique 🇨🇮
+# Td-Services — Agence de création web, design & SEO 🇨🇮
 
 [![Site en ligne](https://img.shields.io/badge/Site-Td--Services-0e76a8?style=flat-square&logo=google-chrome)](https://tdservices-tech.github.io/tdservices/)
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-%2B225%2005%2076%2060%2047%2048-25D366?style=flat-square&logo=whatsapp)](https://wa.me/2250576604748)
 [![Google Business](https://img.shields.io/badge/Google-V%C3%A9rifi%C3%A9-4285F4?style=flat-square&logo=google)](https://g.page/r/CUWSH5KY5CagEAE/review)
+[![SEO](https://img.shields.io/badge/SEO-Optimis%C3%A9-brightgreen?style=flat-square&logo=google)](https://tdservices-tech.github.io/tdservices/)
 [![Licence MIT](https://img.shields.io/badge/Licence-MIT-green?style=flat-square)](LICENSE)
 
-**Td-Services** est une micro-agence basée en Côte d'Ivoire, spécialisée dans la création de sites vitrines, de boutiques en ligne et le design graphique (logos, cartes de visite).
+**Td-Services** est une micro-agence basée en Côte d'Ivoire, spécialisée dans la création de sites vitrines, de boutiques en ligne, le design graphique (logos, cartes de visite) et le référencement SEO.
 
-🎯 **Mission** : offrir une présence en ligne professionnelle et abordable aux petites entreprises, commerçants et entrepreneurs ivoiriens.
+🎯 **Mission** : offrir une présence en ligne professionnelle, abordable et visible sur Google aux petites entreprises, commerçants et entrepreneurs ivoiriens.
 
 ---
 
@@ -19,14 +20,34 @@
 
 ## 💼 Services & Tarifs
 
+### Création de sites web
+
 | Service | Tarif | Délai |
 |---------|-------|-------|
 | 📄 Site vitrine simple (1 page) | **25 000 FCFA** | 5 jours |
 | 🌐 Site vitrine standard (jusqu'à 5 pages) | **50 000 FCFA** | 7 jours |
 | 💼 Site vitrine pro (blog, SEO avancé) | **80 000 FCFA** | 10 jours |
 | 🛒 Boutique en ligne (jusqu'à 20 produits) | **60 000 FCFA** | 10 jours |
-| 🎨 Design graphique (logo, carte de visite) | **dès 5 000 FCFA** | 48h |
-| 🔧 Maintenance mensuelle | **3 000 FCFA/mois** | Mensuel |
+
+### Design graphique
+
+| Service | Tarif | Délai |
+|---------|-------|-------|
+| 🎨 Logo, carte de visite, flyer | **dès 5 000 FCFA** | 48h |
+
+### Maintenance
+
+| Service | Tarif |
+|---------|-------|
+| 🔧 Maintenance mensuelle (mises à jour, sauvegardes, support) | **3 000 FCFA/mois** |
+
+### 🚀 Référencement SEO (NOUVEAU)
+
+| Service | Tarif | Contenu |
+|---------|-------|---------|
+| 📈 SEO Essentiel | **10 000 FCFA/mois** | Sitemap, Google Search Console, balises meta, rapport mensuel |
+| 📊 SEO Standard | **25 000 FCFA/mois** | Essentiel + optimisation contenu, mots-clés, Google Business |
+| 🏆 SEO Pro | **50 000 FCFA/mois** | Standard + articles de blog, backlinks, suivi hebdomadaire |
 
 ---
 
@@ -39,6 +60,8 @@
 - 💬 **Disponible 7j/7 sur WhatsApp** — Réponse sous 2h, même le weekend
 - 📱 **Sites optimisés Afrique** — Légers, rapides même en 3G, boutons WhatsApp intégrés
 - 🔄 **Satisfait ou refait** — Modifications gratuites jusqu'à votre satisfaction
+- 🚀 **SEO inclus** — Chaque site est livré avec un référencement de base optimisé
+- 💳 **Paiement local** — Orange Money, Mobile Money, Wave, espèces acceptés
 
 ---
 
@@ -60,6 +83,16 @@
 
 ---
 
+## 📊 Portfolio
+
+| Projet | Type | Tarif |
+|--------|------|-------|
+| 🏗️ EDC Construction | Site vitrine standard | 50 000 FCFA |
+| 🌐 Nos Services | Site vitrine simple | 25 000 FCFA |
+| 🎨 Design Canva | Logo & carte de visite | dès 5 000 FCFA |
+
+---
+
 ## 🛠️ Stack technique
 
 Ce site est construit avec des technologies simples et performantes :
@@ -68,6 +101,8 @@ Ce site est construit avec des technologies simples et performantes :
 - **CSS3** — Design responsive, animations légères
 - **GitHub Pages** — Hébergement gratuit et rapide
 - **Google Forms** — Formulaire de contact connecté à Google Sheets
+- **Google Search Console** — Suivi du référencement
+- **Données structurées JSON-LD** — SEO enrichi
 - **Pas de JavaScript lourd** — Chargement rapide, compatible tous navigateurs
 
 ---
