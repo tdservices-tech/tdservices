@@ -26,8 +26,8 @@
 |---------|-------|-------|
 | 📄 Site vitrine simple (1 page) | **25 000 FCFA** | 5 jours |
 | 🌐 Site vitrine standard (jusqu'à 5 pages) | **50 000 FCFA** | 7 jours |
-| 💼 Site vitrine pro (blog, SEO avancé) | **80 000 FCFA** | 10 jours |
-| 🛒 Boutique en ligne (jusqu'à 20 produits) | **60 000 FCFA** | 10 jours |
+| 💼 Site vitrine pro (blog, SEO avancé) | **100 000 FCFA** | 10 jours |
+| 🛒 Boutique en ligne (jusqu'à 20 produits) | **70 000 FCFA** | 10 jours |
 
 ### Design graphique
 
@@ -39,7 +39,7 @@
 
 | Service | Tarif |
 |---------|-------|
-| 🔧 Maintenance mensuelle (mises à jour, sauvegardes, support) | **3 000 FCFA/mois** |
+| 🔧 Maintenance mensuelle (mises à jour, sauvegardes, support) | **5 000 FCFA/mois** |
 
 ### 🚀 Référencement SEO (NOUVEAU)
 
@@ -69,7 +69,7 @@
 
 | Canal | Lien |
 |-------|------|
-| 💬 WhatsApp | [+225 05 76 60 47 48](https://wa.me/2250576604748) |
+| 💬 WhatsApp | [+225 07 08 63 25 65](https://wa.me/2250708632565) |
 | ✉️ Email | [turaybusiness888@gmail.com](mailto:turaybusiness888@gmail.com) |
 | 📋 Formulaire | [Demander un devis gratuit](https://tdservices-tech.github.io/tdservices/#contact) |
 | 📍 Google Maps | [Profil Google Business](https://g.page/r/CUWSH5KY5CagEAE/review) |
