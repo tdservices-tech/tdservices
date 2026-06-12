@@ -1,7 +1,7 @@
 # Td-Services — Agence de création web, design & SEO 🇨🇮
 
 [![Site en ligne](https://img.shields.io/badge/Site-Td--Services-0e76a8?style=flat-square&logo=google-chrome)](https://tdservices-tech.github.io/tdservices/)
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-%2B225%2005%2076%2060%2047%2048-25D366?style=flat-square&logo=whatsapp)](https://wa.me/2250576604748)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-%2B225%2005%2076%2060%2047%2048-25D366?style=flat-square&logo=whatsapp)](https://wa.me/2250708632565)
 [![Google Business](https://img.shields.io/badge/Google-V%C3%A9rifi%C3%A9-4285F4?style=flat-square&logo=google)](https://g.page/r/CUWSH5KY5CagEAE/review)
 [![SEO](https://img.shields.io/badge/SEO-Optimis%C3%A9-brightgreen?style=flat-square&logo=google)](https://tdservices-tech.github.io/tdservices/)
 [![Licence MIT](https://img.shields.io/badge/Licence-MIT-green?style=flat-square)](LICENSE)
