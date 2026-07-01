@@ -6,24 +6,20 @@
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-K7VNN2TK');</script>
+    })(window,document,'script','dataLayer','GTM-W3GKFDJ');</script>
     <!-- End Google Tag Manager -->
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Création de sites web en Côte d'Ivoire dès 24 900 FCFA. Google Business vérifié, boutique en ligne, design graphique. Devis gratuit en 24h. +225 0708632565">
-    <meta name="keywords" content="création site web Côte d'Ivoire, site vitrine Abidjan, Google Business, boutique en ligne, design graphique, logo, Td-Services, Djakaridja Touré">
-    <meta name="author" content="Td-Services">
+    <meta name="author" content="Djakaridja Touré - Td-Services">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Td-Services | Création de sites web & design graphique en Côte d'Ivoire">
+    <meta property="og:title" content="Td-Services | Création de sites web & Google Business en Côte d'Ivoire">
     <meta property="og:description" content="Présence en ligne dès 24 900 FCFA. Google Business, boutique en ligne, design graphique. Devis gratuit en 24h.">
     <meta property="og:url" content="https://tdservices-tech.github.io/tdservices/">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://tdservices-tech.github.io/tdservices/og-image.jpg">
     <meta property="og:locale" content="fr_FR">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Td-Services | Création de sites web en Côte d'Ivoire">
-    <meta name="twitter:description" content="Présence en ligne dès 24 900 FCFA. Google Business, boutique en ligne. Devis gratuit en 24h.">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230B1F3A'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%23FF7A33' font-weight='bold'>TD</text></svg>">
     <title>Td-Services | Création de sites web & Google Business en Côte d'Ivoire</title>
 
@@ -88,38 +84,20 @@
         "review": [
             {
                 "@type": "Review",
-                "author": {
-                    "@type": "Person",
-                    "name": "Sekou Fofana"
-                },
-                "reviewRating": {
-                    "@type": "Rating",
-                    "ratingValue": "5"
-                },
+                "author": {"@type": "Person","name": "Sekou Fofana"},
+                "reviewRating": {"@type": "Rating","ratingValue": "5"},
                 "reviewBody": "Très très efficace, merci pour ta disponibilité"
             },
             {
                 "@type": "Review",
-                "author": {
-                    "@type": "Person",
-                    "name": "Yacouba Toure"
-                },
-                "reviewRating": {
-                    "@type": "Rating",
-                    "ratingValue": "5"
-                },
+                "author": {"@type": "Person","name": "Yacouba Toure"},
+                "reviewRating": {"@type": "Rating","ratingValue": "5"},
                 "reviewBody": "Merci beaucoup pour le service rendu"
             },
             {
                 "@type": "Review",
-                "author": {
-                    "@type": "Person",
-                    "name": "Bandama Christian Cedric Adé"
-                },
-                "reviewRating": {
-                    "@type": "Rating",
-                    "ratingValue": "5"
-                },
+                "author": {"@type": "Person","name": "Bandama Christian Cedric Adé"},
+                "reviewRating": {"@type": "Rating","ratingValue": "5"},
                 "reviewBody": "Service rapide et professionnel. Je recommande vivement Td-Services !"
             }
         ]
@@ -160,16 +138,10 @@
         }
         img { max-width: 100%; display: block; }
         .container { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
-
-        @media (prefers-reduced-motion: reduce) {
-            *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
-        }
-
         a:focus-visible, button:focus-visible {
             outline: 3px solid var(--orange);
             outline-offset: 3px;
         }
-
         h1, h2, h3 { font-family: var(--font-display); font-weight: 700; color: var(--navy); }
 
         .eyebrow {
@@ -367,6 +339,7 @@
         }
         .proof-item .icon { font-size: 1.2rem; }
 
+        /* SECTION QUI SUCCÈDE AU HERO */
         .bridge {
             background: linear-gradient(180deg, var(--cream) 0%, #EDE8DF 100%);
             padding: 70px 0 40px;
@@ -682,6 +655,57 @@
             color: var(--text-soft);
         }
 
+        /* NOUVELLE SECTION : PHOTO DE L'EXPERT */
+        .expert-section {
+            background: var(--white);
+            padding: 60px 0;
+            border-top: 1px solid #E7E1D2;
+            border-bottom: 1px solid #E7E1D2;
+        }
+        .expert-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+        .expert-photo {
+            flex: 0 0 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            border: 4px solid var(--orange);
+        }
+        .expert-photo img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        .expert-text { flex: 1; }
+        .expert-text h3 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+        .expert-text h3 span { color: var(--orange); }
+        .expert-text p {
+            color: var(--text-soft);
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        .expert-text .signature {
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            color: var(--navy);
+            font-weight: 700;
+        }
+        @media (max-width: 768px) {
+            .expert-wrapper { flex-direction: column; text-align: center; }
+            .expert-photo { flex: 0 0 150px; }
+            .expert-photo img { height: 150px; }
+        }
+
         .faq-section { background: var(--cream); }
         .faq-list { max-width: 760px; margin: 0 auto; }
         .faq-item {
@@ -817,10 +841,6 @@
             font-weight: 600;
             color: var(--navy);
         }
-        .cross-sell p:second-child {
-            color: var(--text-soft);
-            margin-bottom: 15px;
-        }
         .cross-sell a {
             color: var(--orange);
             font-weight: 800;
@@ -927,19 +947,19 @@
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7VNN2TK"
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3GKFDJ"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- BANNIÈRE PROMO -->
     <div style="background-color: #FF7A33; color: #FFFFFF; text-align: center; padding: 10px 15px; font-weight: 700; font-size: 0.95rem; font-family: 'Manrope', Arial, sans-serif;">
         🚀 Offre de lancement : -20% sur "Visibilité Pro" jusqu'au 31 juillet.
-        <a href="https://wa.me/2250708632565?text=Bonjour%2C%20je%20veux%20profiter%20de%20l%27offre%20sp%C3%A9ciale%20Visibilit%C3%A9%20Pro" style="color: #FFFFFF; text-decoration: underline; margin-left: 8px; font-weight: 800;">
+        <a href="https://wa.me/2250708632565?text=Bonjour%2C%20je%20veux%20profiter%20de%20l%27offre%20sp%C3%A9ciale%20Visibilit%C3%A9%20Pro" style="color: #FFFFFF; text-decoration: underline; margin-left: 8px; font-weight: 800;" onclick="dataLayer.push({'event': 'clic_offre', 'offre': 'banniere_promo'});">
             Je profite de l'offre →
         </a>
     </div>
 
-    <!-- NAVIGATION -->
+    <!-- NAV -->
     <nav>
         <a href="#" class="logo">
             <div class="logo-mark">TD</div>
@@ -988,8 +1008,8 @@
         <div class="container bridge-card">
             <p class="eyebrow" style="justify-content:center">Le constat</p>
             <h2>
-                9 clients sur 10 cherchent d'abord sur Google.<br>
-                <span class="highlight">Si vous n'y êtes pas, ils vont chez le concurrent qui y est.</span>
+                J'accompagne les commerçants et artisans ivoiriens à être visibles sur Google.<br>
+                <span class="highlight">Si vous n'y êtes pas, vos clients vous remplacent par un concurrent.</span>
             </h2>
             <div class="bridge-stat">
                 <div class="bridge-stat-item">
@@ -1014,7 +1034,6 @@
             </div>
 
             <div class="offers-grid">
-                <!-- Offre 1 -->
                 <div class="offer-card">
                     <p class="offer-step">Étape 1</p>
                     <h3>📍 Présence Essentielle</h3>
@@ -1033,7 +1052,6 @@
                     </a>
                 </div>
 
-                <!-- Offre 2 - Recommandée -->
                 <div class="offer-card featured">
                     <p class="offer-step">Étape 2 — recommandée</p>
                     <h3>🚀 Visibilité Pro</h3>
@@ -1053,7 +1071,6 @@
                     </a>
                 </div>
 
-                <!-- Offre 3 -->
                 <div class="offer-card">
                     <p class="offer-step">Étape 3</p>
                     <h3>🛒 Boutique en Ligne</h3>
@@ -1118,6 +1135,26 @@
         </div>
     </section>
 
+    <!-- EXPERT SECTION (VOTRE PHOTO ICI) -->
+    <section class="expert-section">
+        <div class="container expert-wrapper">
+            <div class="expert-photo">
+                <!-- REMPLACEZ "votre-photo.jpg" par le nom de votre fichier image -->
+                <img src="votre-photo.jpg" alt="Djakaridja Touré - Expert en création de sites web en Côte d'Ivoire">
+            </div>
+            <div class="expert-text">
+                <h3>👨‍💻 Djakaridja <span>Touré</span></h3>
+                <p>
+                    Développeur web et expert en référencement local basé à <strong>Odienné</strong>. 
+                    Je crée des sites qui attirent des clients et génèrent des appels. 
+                    Mon approche : un design professionnel, un SEO local efficace, 
+                    et un suivi transparent pour vous garantir des résultats.
+                </p>
+                <p class="signature">"Je ne fais pas que des sites, je construis votre visibilité."</p>
+            </div>
+        </div>
+    </section>
+
     <!-- PORTFOLIO + AVIS -->
     <section class="proof-section" id="portfolio">
         <div class="container">
@@ -1127,21 +1164,21 @@
             </div>
             <div class="proof-grid">
                 <div class="proof-card">
-                    <img src="edccapture.jpg" alt="Site vitrine EDC Construction à Abidjan" class="proof-img" loading="lazy" onerror="this.style.display='none'">
+                    <img src="edccapture.jpg" alt="Site vitrine EDC Construction" class="proof-img" loading="lazy" onerror="this.style.display='none'">
                     <div class="proof-body">
                         <h3>EDC Construction</h3>
                         <p>Visibilité Pro — 49 900 FCFA</p>
                     </div>
                 </div>
                 <div class="proof-card">
-                    <img src="SEO.jpg" alt="Création de site web professionnel" class="proof-img" loading="lazy" onerror="this.style.display='none'">
+                    <img src="SEO.jpg" alt="Optimisation Google Business" class="proof-img" loading="lazy" onerror="this.style.display='none'">
                     <div class="proof-body">
-                        <h3>Nos Services</h3>
+                        <h3>Optimisation Google</h3>
                         <p>Présence Essentielle — 24 900 FCFA</p>
                     </div>
                 </div>
                 <div class="proof-card">
-                    <img src="design-pro.png" alt="Design graphique et logo professionnel" class="proof-img" loading="lazy" onerror="this.style.display='none'">
+                    <img src="design-pro.png" alt="Design graphique" class="proof-img" loading="lazy" onerror="this.style.display='none'">
                     <div class="proof-body">
                         <h3>Design Canva</h3>
                         <p>Logo & carte de visite — 5 000 FCFA</p>
@@ -1158,17 +1195,14 @@
                 </p>
             </div>
             <div class="testimonial-row">
-                <!-- Avis 1 -->
                 <div class="testimonial-card">
                     <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                    <p class="quote">Très très efficace, en tout cas merci pour ta disponibilité</p>
+                    <p class="quote">Très très efficace, merci pour ta disponibilité</p>
                     <div class="testimonial-author">
                         <strong>Sekou Fofana</strong> &bull; Il y a 5 semaines
                         <div class="testimonial-badge">✓ Avis Google vérifié</div>
                     </div>
                 </div>
-
-                <!-- Avis 2 -->
                 <div class="testimonial-card">
                     <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
                     <p class="quote">Merci beaucoup pour le service rendu</p>
@@ -1177,8 +1211,6 @@
                         <div class="testimonial-badge">✓ Avis Google vérifié</div>
                     </div>
                 </div>
-
-                <!-- Avis 3 -->
                 <div class="testimonial-card">
                     <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
                     <p class="quote">Service rapide et professionnel. Je recommande vivement Td-Services !</p>
@@ -1198,7 +1230,6 @@
                 </a>
             </div>
 
-            <!-- BLOC DE RÉSULTATS CHIFFRÉS -->
             <div class="results-block">
                 <div>
                     <div class="number">+12</div>
@@ -1269,7 +1300,7 @@
         <div class="final-cta-inner">
             <p class="eyebrow" style="justify-content:center;color:var(--orange)">Prêt à démarrer ?</p>
             <h2>Votre site peut être en ligne cette semaine</h2>
-            <p>Envoyez-nous votre projet sur WhatsApp. Réponse sous 2h, devis gratuit en 24h.</p>
+            <p>Envoyez-moi votre projet sur WhatsApp. Réponse sous 2h, devis gratuit en 24h.</p>
             <div class="btn-group">
                 <a href="https://wa.me/2250708632565?text=Bonjour%20Td-Services%2C%20j%27ai%20un%20projet%20de%20site%20web." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener" onclick="dataLayer.push({'event': 'clic_whatsapp', 'position': 'cta_final'});">
                     💬 Démarrer sur WhatsApp
@@ -1296,12 +1327,9 @@
         </div>
     </section>
 
-    <!-- PONT VERS VISIDIGITAL -->
+    <!-- CROSS-SELL vers VisiDigital -->
     <div class="cross-sell">
         <p>🚀 Vous voulez une visibilité continue sur Google ?</p>
-        <p style="color: var(--text-soft); margin-bottom: 15px;">
-            VisiDigital gère vos campagnes et votre référencement mois après mois.
-        </p>
         <a href="https://visi-digital.vercel.app" target="_blank" rel="noopener" onclick="dataLayer.push({'event': 'clic_cross_sell', 'destination': 'visidigital'});">
             Découvrir VisiDigital →
         </a>
