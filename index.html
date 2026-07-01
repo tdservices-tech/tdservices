@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K7VNN2TK');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Création de sites web en Côte d'Ivoire dès 24 900 FCFA. Google Business vérifié, boutique en ligne, design graphique. Devis gratuit en 24h. +225 0708632565">
@@ -647,6 +655,33 @@
             margin-top: 30px;
         }
 
+        .results-block {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            background: #FFFFFF;
+            padding: 30px 20px;
+            margin: 40px 0 0;
+            border-radius: var(--radius);
+            border: 1px solid #E7E1D2;
+            text-align: center;
+        }
+        .results-block .number {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--orange);
+        }
+        .results-block p {
+            margin: 5px 0 0;
+            font-size: 0.95rem;
+            color: var(--text-soft);
+        }
+        .results-block small {
+            color: var(--text-soft);
+        }
+
         .faq-section { background: var(--cream); }
         .faq-list { max-width: 760px; margin: 0 auto; }
         .faq-item {
@@ -749,6 +784,11 @@
             gap: 14px;
             flex-wrap: wrap;
         }
+        .final-cta .sub-message {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.5);
+        }
 
         .form-container {
             max-width: 700px;
@@ -763,6 +803,29 @@
             border: none;
             width: 100%;
             background: transparent;
+        }
+
+        .cross-sell {
+            background-color: #F5F1E8;
+            padding: 30px 20px;
+            text-align: center;
+            border-top: 2px solid var(--orange);
+        }
+        .cross-sell p:first-child {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: var(--navy);
+        }
+        .cross-sell p:second-child {
+            color: var(--text-soft);
+            margin-bottom: 15px;
+        }
+        .cross-sell a {
+            color: var(--orange);
+            font-weight: 800;
+            font-size: 1.2rem;
+            text-decoration: underline;
         }
 
         footer {
@@ -851,6 +914,7 @@
             .final-cta .btn-group .btn { width: 100%; max-width: 320px; }
             .whatsapp-float .tooltip { display: none; }
             .payment-row { gap: 16px; }
+            .results-block { gap: 15px; }
         }
         @media (max-width: 480px) {
             .hero h1 { font-size: 1.8rem; }
@@ -862,6 +926,19 @@
     </style>
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7VNN2TK"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- BANNIÈRE PROMO -->
+    <div style="background-color: #FF7A33; color: #FFFFFF; text-align: center; padding: 10px 15px; font-weight: 700; font-size: 0.95rem; font-family: 'Manrope', Arial, sans-serif;">
+        🚀 Offre de lancement : -20% sur "Visibilité Pro" jusqu'au 31 juillet.
+        <a href="https://wa.me/2250708632565?text=Bonjour%2C%20je%20veux%20profiter%20de%20l%27offre%20sp%C3%A9ciale%20Visibilit%C3%A9%20Pro" style="color: #FFFFFF; text-decoration: underline; margin-left: 8px; font-weight: 800;">
+            Je profite de l'offre →
+        </a>
+    </div>
+
     <!-- NAVIGATION -->
     <nav>
         <a href="#" class="logo">
@@ -874,7 +951,7 @@
             <li><a href="#avis">Avis</a></li>
             <li><a href="#faq">FAQ</a></li>
         </ul>
-        <a href="https://wa.me/2250708632565?text=Bonjour%20Td-Services%2C%20j%27ai%20un%20projet%20%C3%A0%20vous%20soumettre." class="btn btn-whatsapp btn-sm nav-cta-mobile" target="_blank" rel="noopener">
+        <a href="https://wa.me/2250708632565?text=Bonjour%20Td-Services%2C%20j%27ai%20un%20projet%20%C3%A0%20vous%20soumettre." class="btn btn-whatsapp btn-sm nav-cta-mobile" target="_blank" rel="noopener" onclick="dataLayer.push({'event': 'clic_whatsapp', 'position': 'nav'});">
             💬 Devis gratuit
         </a>
     </nav>
@@ -893,7 +970,7 @@
                 livrés en 5 jours, pour les commerces et entrepreneurs de Côte d'Ivoire.
             </p>
             <div class="hero-actions">
-                <a href="https://wa.me/2250708632565?text=Salut%20Td-Services%2C%20je%20souhaite%20un%20devis%20pour%20ma%20pr%C3%A9sence%20en%20ligne." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
+                <a href="https://wa.me/2250708632565?text=Salut%20Td-Services%2C%20je%20souhaite%20un%20devis%20pour%20ma%20pr%C3%A9sence%20en%20ligne." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener" onclick="dataLayer.push({'event': 'clic_whatsapp', 'position': 'hero'});">
                     💬 Demander mon devis sur WhatsApp
                 </a>
                 <a href="#services" class="btn btn-ghost">Voir les offres</a>
@@ -951,7 +1028,7 @@
                         <li>Référencement de base sur Google</li>
                         <li>Livré en 5 jours</li>
                     </ul>
-                    <a href="https://wa.me/2250708632565?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20l%27offre%20Pr%C3%A9sence%20Essentielle%20%C3%A0%2024%20900%20FCFA." class="btn btn-navy btn-block btn-sm" target="_blank" rel="noopener">
+                    <a href="https://wa.me/2250708632565?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20l%27offre%20Pr%C3%A9sence%20Essentielle%20%C3%A0%2024%20900%20FCFA." class="btn btn-navy btn-block btn-sm" target="_blank" rel="noopener" onclick="dataLayer.push({'event': 'clic_offre', 'offre': 'presence_essentielle'});">
                         Choisir cette offre
                     </a>
                 </div>
@@ -971,7 +1048,7 @@
                         <li>1 mois de maintenance offert</li>
                         <li>1 modification incluse après livraison</li>
                     </ul>
-                    <a href="https://wa.me/2250708632565?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20l%27offre%20Visibilit%C3%A9%20Pro%20%C3%A0%2049%20900%20FCFA." class="btn btn-primary btn-block" target="_blank" rel="noopener">
+                    <a href="https://wa.me/2250708632565?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20l%27offre%20Visibilit%C3%A9%20Pro%20%C3%A0%2049%20900%20FCFA." class="btn btn-primary btn-block" target="_blank" rel="noopener" onclick="dataLayer.push({'event': 'clic_offre', 'offre': 'visibilite_pro'});">
                         Choisir cette offre
                     </a>
                 </div>
@@ -990,7 +1067,7 @@
                         <li>Paiement Orange Money / Wave intégré</li>
                         <li>Livré en 10 jours</li>
                     </ul>
-                    <a href="https://wa.me/2250708632565?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20l%27offre%20Boutique%20en%20Ligne%20%C3%A0%2084%20900%20FCFA." class="btn btn-navy btn-block btn-sm" target="_blank" rel="noopener">
+                    <a href="https://wa.me/2250708632565?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20l%27offre%20Boutique%20en%20Ligne%20%C3%A0%2084%20900%20FCFA." class="btn btn-navy btn-block btn-sm" target="_blank" rel="noopener" onclick="dataLayer.push({'event': 'clic_offre', 'offre': 'boutique_en_ligne'});">
                         Choisir cette offre
                     </a>
                 </div>
@@ -998,7 +1075,7 @@
 
             <div class="addon-strip">
                 <p>🎨 <strong>Besoin d'un logo ou d'une carte de visite ?</strong> Ajoutez-le à n'importe quelle offre pour 5 000 FCFA de plus.</p>
-                <a href="https://wa.me/2250708632565?text=Bonjour%2C%20je%20voudrais%20ajouter%20le%20design%20graphique%20%C3%A0%20mon%20offre." class="btn btn-navy btn-sm" target="_blank" rel="noopener">
+                <a href="https://wa.me/2250708632565?text=Bonjour%2C%20je%20voudrais%20ajouter%20le%20design%20graphique%20%C3%A0%20mon%20offre." class="btn btn-navy btn-sm" target="_blank" rel="noopener" onclick="dataLayer.push({'event': 'clic_offre', 'offre': 'design_graphique'});">
                     En savoir plus
                 </a>
             </div>
@@ -1113,12 +1190,28 @@
             </div>
 
             <div class="review-cta">
-                <a href="https://g.page/r/CUWSH5KY5CagEAE/review" class="btn btn-navy btn-sm" target="_blank" rel="noopener">
+                <a href="https://g.page/r/CUWSH5KY5CagEAE/review" class="btn btn-navy btn-sm" target="_blank" rel="noopener" onclick="dataLayer.push({'event': 'clic_avis', 'action': 'laisser_avis'});">
                     ⭐ Laisser un avis Google
                 </a>
-                <a href="https://wa.me/2250708632565?text=Bonjour%20Td-Services%2C%20voici%20mon%20t%C3%A9moignage%20%3A" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">
+                <a href="https://wa.me/2250708632565?text=Bonjour%20Td-Services%2C%20voici%20mon%20t%C3%A9moignage%20%3A" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener" onclick="dataLayer.push({'event': 'clic_avis', 'action': 'temoignage'});">
                     💬 Envoyer un témoignage
                 </a>
+            </div>
+
+            <!-- BLOC DE RÉSULTATS CHIFFRÉS -->
+            <div class="results-block">
+                <div>
+                    <div class="number">+12</div>
+                    <p>Appels générés en 15 jours<br><small>(pour EDC Construction)</small></p>
+                </div>
+                <div>
+                    <div class="number">Top 3</div>
+                    <p>Position moyenne atteinte<br><small>dans les recherches locales</small></p>
+                </div>
+                <div>
+                    <div class="number">100%</div>
+                    <p>Satisfaction client<br><small>(basé sur 3 avis)</small></p>
+                </div>
             </div>
         </div>
     </section>
@@ -1176,15 +1269,18 @@
         <div class="final-cta-inner">
             <p class="eyebrow" style="justify-content:center;color:var(--orange)">Prêt à démarrer ?</p>
             <h2>Votre site peut être en ligne cette semaine</h2>
-            <p>Envoyez-nous votre projet sur WhatsApp et recevez votre devis gratuit en 24h.</p>
+            <p>Envoyez-nous votre projet sur WhatsApp. Réponse sous 2h, devis gratuit en 24h.</p>
             <div class="btn-group">
-                <a href="https://wa.me/2250708632565?text=Bonjour%20Td-Services%2C%20j%27ai%20un%20projet%20%C3%A0%20vous%20soumettre." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
-                    💬 WhatsApp : +225 07 08 63 25 65
+                <a href="https://wa.me/2250708632565?text=Bonjour%20Td-Services%2C%20j%27ai%20un%20projet%20de%20site%20web." class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener" onclick="dataLayer.push({'event': 'clic_whatsapp', 'position': 'cta_final'});">
+                    💬 Démarrer sur WhatsApp
                 </a>
-                <a href="mailto:turaybusiness888@gmail.com" class="btn btn-ghost btn-lg">
-                    ✉️ Envoyer un email
+                <a href="#services" class="btn btn-ghost btn-lg">
+                    👀 Voir les offres
                 </a>
             </div>
+            <p class="sub-message">
+                🔒 Aucun engagement • Paiement après validation de la maquette
+            </p>
         </div>
         <div class="container">
             <div class="form-container">
@@ -1200,6 +1296,17 @@
         </div>
     </section>
 
+    <!-- PONT VERS VISIDIGITAL -->
+    <div class="cross-sell">
+        <p>🚀 Vous voulez une visibilité continue sur Google ?</p>
+        <p style="color: var(--text-soft); margin-bottom: 15px;">
+            VisiDigital gère vos campagnes et votre référencement mois après mois.
+        </p>
+        <a href="https://visi-digital.vercel.app" target="_blank" rel="noopener" onclick="dataLayer.push({'event': 'clic_cross_sell', 'destination': 'visidigital'});">
+            Découvrir VisiDigital →
+        </a>
+    </div>
+
     <!-- FOOTER -->
     <footer>
         <div class="logo-text">Td-<span style="color:var(--orange)">Services</span></div>
@@ -1208,7 +1315,7 @@
             <a href="https://facebook.com/tdservices" target="_blank" rel="noopener">Facebook</a>
             <a href="https://instagram.com/boutique.enligne.ci" target="_blank" rel="noopener">Instagram</a>
             <a href="https://github.com/tdservices-tech/tdservices" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://wa.me/2250708632565" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://wa.me/2250708632565" target="_blank" rel="noopener" onclick="dataLayer.push({'event': 'clic_whatsapp', 'position': 'footer'});">WhatsApp</a>
         </div>
         <div class="footer-legal">
             <a href="mentions-legales.html">Mentions légales</a> &nbsp;|&nbsp;
@@ -1217,7 +1324,7 @@
     </footer>
 
     <!-- WHATSAPP FLOAT -->
-    <a href="https://wa.me/2250708632565?text=Bonjour%20Td-Services%20!" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
+    <a href="https://wa.me/2250708632565?text=Bonjour%20Td-Services%20!" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp" onclick="dataLayer.push({'event': 'clic_whatsapp', 'position': 'float'});">
         💬
         <span class="tooltip">Discutons sur WhatsApp</span>
     </a>
